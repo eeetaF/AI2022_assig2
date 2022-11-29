@@ -86,7 +86,7 @@ def fit_test(current_chord, tonic_note, notes_set, notes_during_chord, last_chor
     interval2 = chord_notes[2] - chord_notes[1]
     interval3 = chord_notes[2] - chord_notes[0]
 
-    # we want to end with a tonic accord
+    # we want to end with a tonic chord
     if last_chord:
         if mode == 'major':
             if interval1 == 4 and interval2 == 3 and chord_notes[0] % 12 == tonic_note:
